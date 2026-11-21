@@ -24,7 +24,7 @@ export async function listUsers(organizationId) {
 }
 
 /**
- * Get a single user by ID — enforces tenant isolation.
+ * Get a single user by ID - enforces tenant isolation.
  */
 export async function getUserById(userId, organizationId) {
   const user = await prisma.user.findFirst({
